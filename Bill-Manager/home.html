@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bill Manager Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter',sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#2563eb,#1e3a8a);
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    .container{
+      background:rgba(255,255,255,0.1);
+      backdrop-filter:blur(10px);
+      padding:50px;
+      border-radius:24px;
+      max-width:700px;
+      width:100%;
+      box-shadow:0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+
+    p{
+      font-size:18px;
+      line-height:1.8;
+      color:#e2e8f0;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:white;
+      color:#2563eb;
+      padding:16px 32px;
+      border-radius:14px;
+      font-size:18px;
+      font-weight:600;
+      transition:0.3s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-4px);
+      background:#f8fafc;
+    }
+
+    .features{
+      margin-top:40px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+    }
+
+    .feature-box{
+      background:rgba(255,255,255,0.12);
+      padding:20px;
+      border-radius:16px;
+    }
+
+    .feature-box h3{
+      margin-bottom:10px;
+      font-size:18px;
+    }
+
+    .feature-box p{
+      font-size:14px;
+      margin:0;
+      color:#cbd5e1;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Bill Management Platform</h1>
+
+    <p>
+      Manage customer bills, payments, expenses,
+      and records easily using this modern
+      bill management application.
+    </p>
+
+    <!-- LINK TO MAIN PAGE -->
+    <a href="index.html" class="btn">
+      Open Bill Dashboard
+    </a>
+
+    <div class="features">
+
+      <div class="feature-box">
+        <h3>Track Bills</h3>
+        <p>Manage all customer billing records efficiently.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Payment Status</h3>
+        <p>Monitor paid and unpaid bills easily.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Expense Overview</h3>
+        <p>View total income and pending expenses instantly.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
